@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    xmlns:card_view="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/view_header"
+        app:layout_widthPercent="95%"
+        app:layout_heightPercent="30%"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_rect" >
+
+        <RelativeLayout
+            android:id="@+id/left_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginTop="25dp">
+
+            <ImageView
+                android:id="@+id/profile_pic"
+                android:layout_width="300px"
+                android:layout_height="300px"/>
+
+            <TextView
+                android:id="@+id/self_followers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_below="@id/profile_pic"
+                android:layout_marginTop="13dp"
+                android:text="@string/followers"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/self_following"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_below="@id/self_followers"
+                android:layout_marginTop="7dp"
+                android:text="@string/following"
+                android:layout_alignParentLeft="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/left_layout"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/self_username"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:alpha="0"/>
+
+            <TextView
+                android:id="@+id/self_unfollowers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/self_username"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:text="@string/unfollowers"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tab_text"
+        android:text="@string/followers_list"
+        android:layout_below="@id/view_header"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:paddingTop="15dp"
+        android:textSize="13sp"
+        android:textStyle="bold"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        app:tabMode="fixed"
+        android:layout_below="@id/view_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="6dp"
+        app:tabIndicatorHeight="0dp"
+        app:tabBackground="@drawable/tab_selector"
+        app:tabGravity="center" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_below="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</android.support.percent.PercentRelativeLayout>

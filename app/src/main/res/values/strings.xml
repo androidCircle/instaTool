@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ManIG</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="login_btn">Login</string>
+    <string name="username_error">Username cannot be empty!</string>
+    <string name="password_error">Password cannot be empty!</string>
+    <string name="presenter_tag">PRESENTER</string>
+    <string name="action_unfollow">unfollow</string>
+    <string name="is_verified">VERIFIED USER</string>
+    <string name="is_not_verified">NORMAL USER</string>
+    <string name="placeholder">PLACEHOLDER</string>
+    <string name="followers">Followers: </string>
+    <string name="following">Following: </string>
+    <string name="unfollowers">Unfollowers: </string>
+    <string name="followers_list">Followers List</string>
+    <string name="unfollowers_list">Unfollowers List</string>
+</resources>

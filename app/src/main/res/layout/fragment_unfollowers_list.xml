@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/unfollowers_recycler_view"
+        android:layout_below="@id/view_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardElevation="8dp"
+        card_view:cardCornerRadius="2dp"
+        app:layout_widthPercent="95%"
+        android:scrollbars="none"
+        android:layout_centerHorizontal="true"/>
+
+</android.support.percent.PercentRelativeLayout>
